@@ -1,5 +1,5 @@
 import json, logging
-from .redis import redis_client  # Implement this on your own!
+from ..utils.redis import redis_client  # Implement this on your own!
 
 RECOMM_JOB_STORE = "log:scheduler:jobs"
 RECOMM_JOBS_RUN_TIME_KEY = "log:scheduler:run_times"

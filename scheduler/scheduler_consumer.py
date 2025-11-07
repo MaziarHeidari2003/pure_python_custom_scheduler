@@ -1,6 +1,6 @@
 import asyncio, time, json, asyncio, logging
-from .redis import redis_client
-from .task_processor import process_user_action
+from ..utils.redis import redis_client
+from ..utils.task_processor import process_user_action
 from .scheduler_consumer import RECOMM_JOB_STORE, RECOMM_JOBS_RUN_TIME_KEY
 
 logger = logging.getLogger(__name__)
